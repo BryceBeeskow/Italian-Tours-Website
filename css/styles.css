@@ -1,0 +1,385 @@
+
+/*I certify that the CSS file I am submitting is all my own work.
+ None of it is copied from any source or any person.
+ Signed: Bryce Beeskow, Randy Shear
+ Date: 2/23/2025*/
+/*Author: Bryce Beeskow, Randy Shear
+ Date: 2/23/2025
+ Class: CSC135
+ Project: Final Project
+ File Name: scripts.css
+ Description: Styling for website*/
+/* Add references if applicable */
+/* Styling for whole document -- add comments throughout your file */ 
+
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  width: 480px;
+  text-align: center;
+}
+
+/* Home Page image */
+.homepage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Header Styling */
+header {
+  background-color: rgb(16 125 53) ;
+  float: left;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* styling for header h1 */
+header h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-family: cursive;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+}
+
+/* styling for header img */
+header img {
+
+  float: left;
+}
+
+/* styling for header ul */
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(16 125 53);
+  height: 50px;
+  width: 480px;
+  
+}
+
+/* styling for header li */
+header li {
+  float: right;
+  margin: auto;
+  display: inline;
+}
+
+/* styling for header li a */
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 7px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #CE2B37;
+  color: white;
+  text-align: center;
+}
+
+/* Return to Top Button Styling */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#return-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 20px;
+}
+
+/* Grid Layout */
+.grid-item h2{
+  font-size: 25px;
+}
+
+/* styling grid items */
+.placestovisit .grid-item {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* grid images styling for home page */
+.homepage .grid-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+/* grid images styling for places to visit page */
+.placestovisit .grid-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+/* styling for grid item paragraph */
+.grid-item p {
+  font-size: small;
+  color: white;
+}
+
+/* heading for placestovisit page */
+.pagetitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 40px;  
+  margin-bottom: 20px;  
+  font-weight: bold;
+  color: #333;
+  grid-column: span 2;
+}
+
+/* styling for the information on home page */
+.infoonhome {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 40px;  
+  margin-bottom: 20px; 
+  color: #333;
+  grid-column: span 2;
+}
+
+/* Image styling for packages page */
+.packages img {
+  width: 100%;  
+  max-width: 300px;
+  height: auto;  
+  margin: 20px 0; 
+  display: block; 
+  border-radius: 8px; 
+}
+
+/* Flexbox Container for Packages */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Flex Item */
+.flex-item {
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for List inside Flex Items */
+.flex-item ul {
+  list-style-type:decimal;
+  padding: 0;         
+  margin: 0;        
+  text-align: left;     
+}
+
+/* flex item list item */
+.flex-item li {
+  margin-bottom: 10px; 
+  font-size: 1.1em;  
+}
+
+/* styling for About Us page */
+.about img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* styling for about us container */
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 30px;
+}
+
+/* styling for about us full width Goal */
+.about .full-width {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* styling for booking img */
+.booking img {
+  float: right;
+  width: 25%;  
+  height: auto;  
+  margin: 20px 0; 
+  display: block; 
+  border-radius: 8px; 
+}
+
+/* styling for booking and choose */
+.booking .choose {
+  text-align: left;
+  margin: 40px;
+}
+
+/* styling for booking and hear */
+.booking .hear {
+  text-align: left;
+  margin: 40px 160px 40px 40px;
+}
+
+/* styling for booking table */
+.booking table,th,td {
+  border: 2px solid gray;
+}
+
+/* styling for booking and FAQ */
+.booking .faq {
+  margin: 100px 50px 50px 50px;
+}
+
+/* styling for booking, faq, and caption */
+.booking .faq caption {
+  margin-bottom: 30px;
+}
+
+/* Tablet */   
+@media all and (min-width: 740px) {
+  header ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type: circle;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: rgb(16 125 53);
+   height: 50px;
+   width: 740px;
+ 
+ }
+
+   body {
+   font-family: Arial, sans-serif;
+   background-color: white;
+   width: 740px;
+   text-align: center;
+   }
+}
+
+/* Desktop 1020 */   
+@media all and (min-width: 1020px) {
+  header ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type: circle;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: rgb(16 125 53);
+   height: 50px;
+   width: 1020px;
+ 
+ }
+
+   body {
+   font-family: Arial, sans-serif;
+   background-color: white;
+   width: 1020px;
+   text-align: center;
+   }
+} 
+/* Desktop 1920 */   
+@media all and (min-width: 1920px) {
+  header ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type:circle;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: rgb(16 125 53);
+   height: 50px;
+   width: 1920px;
+ 
+ }
+ 
+   body {
+   font-family: Arial, sans-serif;
+   background-color: white;
+   width: 1920px;
+   text-align: center;
+   }
+} 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+

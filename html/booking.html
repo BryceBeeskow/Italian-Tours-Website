@@ -1,0 +1,128 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Randy Shear
+Date: 02/23/2025
+-->
+<!--
+Author: Randy Shear
+Date: 02/23/2025
+Class: CSC135
+Project: Final Project
+File Name: booking.html
+Description: booking page of webpage
+-->
+<!--
+Add references here
+https://images.unsplash.com/photo-1598258500419-5d7895465a20?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../JavaScript/myscript.js" defer></script> 
+</head>
+<body>
+   <!-- header of the page with nav-->
+   <header><img src="../images/Logo.jpg" alt="logo for Italian Tours, LLC."> <h1>Italian Tours, LLC.</h1>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="placestovisit.html">Places to Visit</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!--main of booking page-->
+   <main class="booking">
+      <h2>Booking</h2>
+      <!--Image of Italy-->
+      <img src="../images/scooters.jpg" alt="two scooters in an alley">
+      <article class="choose">
+      <!--description of page-->
+         <h3>Choose the package you want</h3>
+ 	      <select name="Package">
+            <option value="Feature1">Feature 1</option>
+            <option value="Feature2">Feature 2</option>
+            <option value="Sale1">Sale 1</option>
+            <option value="Sale2">Sale 2</option>  
+            <option value="Colosseum">Colosseum</option>
+            <option value="Pompeii">Pompeii</option>
+            <option value="LeaningTowerOfPisa">Leaning Tower of Pisa</option>
+            <option value="GondolaRide">Gondola Ride</option>
+            <option value="MountEtna">Mount Etna</option>
+            <option value="Trastevere">Trastevere</option>
+         </select>
+         <p>
+         <input type="submit" value="Submit">
+         </p>
+      </article>
+      <article class="hear">
+         <h3>How did you hear about us?</h3>
+         <form>
+            <p>
+               <input type="checkbox" name="facebook" id="facebook">  
+               <label for="facebook">Facebook</label>
+            </p>
+            <p>
+               <input type="checkbox" name="instagram" id="instagram">  
+               <label for="instagram">Instagram</label>
+            </p>
+            <p>
+               <input type="checkbox" name="google" id="google">  
+               <label for="google">Google</label>
+            </p>
+            <p>
+               <input type="checkbox" name="youtube" id="youtube">  
+               <label for="youtube">YouTube</label>
+            </p>
+            <input type="submit" value="Submit">
+         </form>
+      </article>
+      <p>Want a discount?</p>
+      <button id="myButton">Click here for a discount</button>
+      <p id="message"></p>
+      <table class="faq">
+         <caption>FAQ</caption>
+         <tr>
+            <th>Question</th>
+            <th>Answer</th>
+         </tr>
+         <tr>
+            <td>What should I bring?</td>
+            <td>You may bring anything you want to make the trip memorable</td>
+         </tr>
+         <tr>
+            <td>What will the weather be like?</td>
+            <td>It depends in what season you travel</td>
+         </tr>
+         <tr>
+            <td>How will we travel?</td>
+            <td>We will travel by bus</td>
+         </tr>
+         <tr>
+            <td>Can I bring kids?</td>
+            <td>All ages are welcome</td>
+         </tr>
+         <tr>
+            <td>How much luggage can I bring?</td>
+            <td>1 carry on and 1 sto-away</td>
+         </tr>
+         <tr>
+            <td>Can I get a refund?</td>
+            <td>Partical refund up to 1 month before the trip</td>
+         </tr>
+      </table>
+   </main>
+    <!--Footer of page-->
+      <footer>
+         <p>All contents copyright &copy; 2025, Italian Tours</p>
+      </footer>
+</body>
+</html> 

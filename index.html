@@ -1,0 +1,91 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Bryce Beeskow, Randy Shear
+Date: 02/23/2025
+-->
+<!--
+Author: Bryce Beeskow, Randy Shear
+Date: 02/23/2025
+Class: CSC135
+Project: Final Project
+File Name: index.html
+Description: Home page of webpage
+-->
+<!--
+Add references here
+https://unsplash.com/photos/aerial-view-of-colosseum-at-rome-italy-ckotRXopwRM
+https://unsplash.com/photos/pathway-between-beige-houses-8pKrkO2cx1A
+https://unsplash.com/photos/photography-of-inside-black-structure-0gBnnMdQPw
+https://unsplash.com/photos/rome-skyline-with-vatican-st-peter-basilica-of-vatican-and-st-angelo-bridge-crossing-tiber-river-in-the-city-center-of-rome-italy-it-is-historic-landmark-of-the-ancient-rome-and-travel-destination-uAB5lZxyMUg
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- header of the page with nav-->
+<body>
+    <header> <img src="images/Logo.jpg" alt="logo for Italian Tours, LLC."> <h1>Italian Tours, LLC.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/aboutus.html">About Us</a></li>
+                <li><a href="html/packages.html">Packages</a></li>
+                <li><a href="html/booking.html">Booking</a></li>
+                <li><a href="html/placestovisit.html">Places to Visit</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main class="homepage">
+        <!--image and slogan-->
+        <img src="images/ITALYIMAGE.jfif" alt="ITALY">
+        <h2> EXPLORE ROME</h2>
+    
+      <!--main info of packages with images-->  
+    <section class="grid-container">
+        <h6 class="infoonhome">Feature Packages (Simply select this from the drop down on the booking page)</h6>
+        <!--Feature 1 grid item-->
+        <article class="grid-item">
+          <a href="html/booking.html"> <img src="images/colosseum2.jpg" alt="colosseum Image" ></a>
+            <h2>Feature 1</h2>
+        </article>
+
+        <!--Feature 2 grid item-->
+        <article class="grid-item">
+          <a href="html/booking.html"> <img src="images/pathway.jpg" alt="Pathway between buildings" height="10"></a>
+            <h2>Feature 2</h2>
+        </article>          
+    </section>	
+
+    <!--more information on packages and images-->
+    <section class="grid-container">
+        <h6 class="infoonhome">Packages on Sale (Simply select from the drop down on the booking page)</h6>
+        <!--Sale 1 grid item-->
+        <article class="grid-item">
+          <a href="html/booking.html"> <img src="images/stpetersbasilica.jpg" alt="St. Peter's Basilica Image" ></a>
+            <h2>Sale 1</h2>
+        </article>
+
+        <!--Sale 2 grid item-->
+        <article class="grid-item">
+           <a href="html/booking.html"><img src="images/skyline.jpg" alt="skyline of Rome" ></a>
+            <h2>Sale 2</h2>
+        </article>    
+    </section>
+</main>
+
+    <!--Footer of page-->
+    <footer>
+    <p>All contents copyright &copy; 2025, Italian Tours</p>
+    <button id="return-to-top" class="return-to-top">↑ Return to Top</button>
+
+    </footer>
+</body>
+</html> 
